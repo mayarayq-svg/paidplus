@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAIDZ PLUS — منصة الربح والإعلانات الاحترافية</title>
+  <meta name="description" content="PAIDZ PLUS منصة متكاملة للربح من الإعلانات، البوتات، والشروحات الاحترافية">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== الهيدر ===== -->
+  <header class="header">
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="القائمة">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+
+    <a href="index.html" class="logo">PAIDZ PLUS</a>
+
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="تبديل الوضع">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
+  </header>
+
+  <!-- ===== القائمة الجانبية ===== -->
+  <nav class="side-menu" id="sideMenu">
+    <div class="side-header">
+      <span class="side-logo">PAIDZ PLUS</span>
+    </div>
+    <a href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      الرئيسية
+    </a>
+    <a href="bots.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="3"/><path d="M12 8V4M8 14h.01M16 14h.01"/></svg>
+      البوتات
+    </a>
+    <a href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      طرق الربح
+    </a>
+    <a href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      الشروحات
+    </a>
+    <a href="article.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><line x1="10" y1="9" x2="18" y2="9"/><line x1="10" y1="13" x2="18" y2="13"/><line x1="10" y1="17" x2="14" y2="17"/></svg>
+      المقالات
+    </a>
+    <a href="#">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      تواصل معنا
+    </a>
+  </nav>
+  <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-tag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        منصة احترافية
+      </span>
+      <h1>مرحبًا بك في <span>PAIDZ PLUS</span></h1>
+      <p>منصتك المتكاملة للربح من الإعلانات، اكتشاف البوتات الاحترافية، وتعلّم أحدث طرق تحقيق الدخل من الإنترنت.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">ابدأ الآن</a>
+        <a href="#" class="btn-secondary">استكشف المزيد</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== المميزات ===== -->
+  <section class="features container">
+    <h2 class="section-title">لماذا PAIDZ PLUS؟</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>ربح حقيقي</h3>
+        <p>طرق موثوقة ومجرّبة لتحقيق دخل من الإنترنت</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="3"/><path d="M12 8V4M8 14h.01M16 14h.01"/></svg>
+        </div>
+        <h3>بوتات احترافية</h3>
+        <p>أفضل البوتات المجانية والمدفوعة في مكان واحد</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3>شروحات مفصّلة</h3>
+        <p>دروس خطوة بخطوة لكل ما تحتاجه</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+        </div>
+        <h3>تحديث مستمر</h3>
+        <p>محتوى جديد باستمرار لمواكبة كل جديد</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== المقال ===== -->
+  <section class="container">
+    <article class="article">
+      <span class="article-badge">مقال مميّز</span>
+      <h1>بوت PAIDZ الاحترافي للربح من الإعلانات</h1>
+
+      <div class="article-meta">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          محدث اليوم
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          5 دقائق قراءة
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          مقال حصري
+        </span>
+      </div>
+
+      <div class="article-image">
+        <img src="A1.png" alt="شعار بوت PAIDZ">
+      </div>
+
+      <p class="lead">
+        <strong>بوت PAIDZ</strong> هو أداة احترافية تتيح لك الربح من الإعلانات بطريقة سهلة ومربحة، دون الحاجة إلى خبرة سابقة أو رأس مال.
+      </p>
+
+      <h2>ما هو بوت PAIDZ؟</h2>
+      <p>بوت PAIDZ منصة ذكية تعرض عليك إعلانات قصيرة، وعند مشاهدتها تحصل على مكافآت مالية تتراكم في حسابك داخل البوت، ثم يمكنك سحبها إلى محفظتك الإلكترونية بسهولة.</p>
+
+      <h2>مميزات البوت</h2>
+      <ul>
+        <li>الربح من مشاهدة الإعلانات</li>
+        <li>واجهة عربية سهلة الاستخدام</li>
+        <li>سحب الأرباح بسرعة</li>
+        <li>نظام إحالة يضاعف دخلك</li>
+        <li>يعمل على جميع الأجهزة</li>
+      </ul>
+
+      <h2>كيف تبدأ؟</h2>
+      <ol>
+        <li>افتح تطبيق تلغرام</li>
+        <li>ابحث عن بوت PAIDZ</li>
+        <li>اضغط زر <strong>Start</strong></li>
+        <li>ابدأ بمشاهدة الإعلانات</li>
+        <li>اجمع أرباحك واسحبها</li>
+      </ol>
+
+      <div class="cta-box">
+        <h3>جرّب بوت PAIDZ الآن</h3>
+        <p>ابدأ الربح من اليوم بدون أي استثمار</p>
+        <a href="https://t.me/PAlDZ_BOT/start?startapp=ref_c6572488" class="cta-btn" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          افتح البوت
+        </a>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===== الفوتر ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>PAIDZ PLUS</h3>
+        <p>منصتك الاحترافية للربح من الإنترنت</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">الرئيسية</a>
+        <a href="bots.html">البوتات</a>
+        <a href="#">الشروحات</a>
+        <a href="#">تواصل</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PAIDZ PLUS — جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
